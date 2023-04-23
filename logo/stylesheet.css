@@ -1,0 +1,87 @@
+/* Set the root font size and define some custom CSS variables */
+:root {
+  --page-width: 27;
+  --viewport-height: 100vh;
+  --row-height: calc(var(--viewport-height) / 7);
+}
+
+/* Reset the margin of the body */
+body {
+  margin: 0;
+}
+
+/* Create a gradient background with two colors */
+.gradient-background {
+  height: var(--viewport-height);
+  background: linear-gradient(to bottom, #732365, #305DA9);
+  position: relative;
+}
+
+/* Create a white rectangle for the top row */
+.rectangle-top-row {
+  position: absolute;
+  top: 0;
+  left: calc(8 / var(--page-width) * 100%);
+  width: calc(11 / var(--page-width) * 100%);
+  height: var(--row-height);
+  background-color: white;
+}
+
+/* Create a white rectangle for the second row */
+.rectangle-second-row {
+  position: absolute;
+  top: var(--row-height);
+  left: 0;
+  width: 100%;
+  height: var(--row-height);
+  background-color: white;
+}
+
+/* Create a small white rectangle for the third row */
+.rectangle-small {
+  position: absolute;
+  width: calc(3 / var(--page-width) * 100%);
+  height: var(--row-height);
+  background-color: white;
+}
+
+/* Position the small white rectangle on the third row */
+.rectangle-small-third-row {
+  top: calc(2 * var(--row-height));
+  left: calc(16 / var(--page-width) * 100%);
+}
+
+/* Create a white rectangle for the fourth row */
+.rectangle-fourth-row {
+  position: absolute;
+  bottom: calc(3 * var(--row-height));
+  left: 0;
+  width: 100%;
+  height: var(--row-height);
+  background-color: white;
+}
+
+/* Create a small white rectangle for the fifth row */
+.rectangle-small-fifth-row {
+  bottom: calc(2 * var(--row-height));
+  left: calc(8 / var(--page-width) * 100%);
+}
+
+/* Create a white rectangle for the sixth row */
+.rectangle-sixth-row {
+  position: absolute;
+  bottom: var(--row-height);
+  left: 0;
+  width: 100%;
+  height: var(--row-height);
+  background-color: white;
+}
+
+/* Create a small white rectangle for the seventh row */
+.rectangle-small-seventh-row {
+  bottom: 0;
+  left: calc(8 / var(--page-width) * 100%);
+  width: calc(3 / var(--page-width) * 100%);
+  height: var(--row-height);
+  background-color: white;
+}
